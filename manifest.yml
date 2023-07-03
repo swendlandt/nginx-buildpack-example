@@ -1,0 +1,8 @@
+---
+applications:
+- name: global-cockpit-redirect
+  memory: 32M
+  instances: 2
+  buildpacks:
+    - https://github.com/cloudfoundry/nginx-buildpack.git#v1.2.4
+  stack: cflinuxfs4
